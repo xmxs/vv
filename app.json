@@ -8,8 +8,20 @@
             "value": "ad806487-2d26-4636-98b6-ab85cc8521f7"
         },
         "cpath": {
-            "description": "cpath",
+            "description": "ws path",
             "value": "2333c"
+        },
+        "dl_agent": {
+            "description": "get nz agent",
+            "value": "https://google.com/"
+        },
+        "nz_server": {
+            "description": "nz server",
+            "value": "google.com.hk:443"
+        },
+        "ak": {
+            "description": "access key",
+            "value": "c156396830e0"
         }
     },
     "website": "https://google.com/",
