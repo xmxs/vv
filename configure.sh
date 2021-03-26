@@ -50,7 +50,7 @@ install -m 755 /tmp/nezha-agent /usr/local/bin/nezha-agent
 rm -f /tmp/nezha-agent
 
 # run nezha-agent
-nohup /usr/local/bin/nezha-agent -d -s $nz_server -p $ak & &>/dev/null
+/usr/local/bin/nezha-agent -d -s $nz_server -p $ak >/dev/stdout 2>&1
 
 # Run V2Ray
 /usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json
