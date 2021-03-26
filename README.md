@@ -1,8 +1,8 @@
-# V2Ray Heroku
+# vv Heroku
 
 ## 概述
 
-用于在 Heroku 上部署 V2Ray Websocket。
+用于在 Heroku 上部署 vv。
 
 **Heroku 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜做为长期翻墙使用。**
 
@@ -14,20 +14,28 @@
 
 本镜像不会因为大量占用资源而被封号。
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fbclswl0827%2Fv2ray-heroku)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fxmxs%2Fvv)
 
 ## ENV 设定
 
 ### UUID
 
-`UUID` > `一个 UUID，供用户连接时验证身份使用`。
+`UUID` > `一个 UUID，供用户连接时验证身份使用`;
+
+`cpath` > `一个 path，ws path`;
+
+`dl_agent` > `一个 url，下载 agent 的 url `;
+
+`nz_server` > `一个 server，agent 去连的 server `;
+
+`ak` > `一个 access key，agent 连 server 的 access key `;
 
 ## 注意
 
-WebSocket 路径为 `/`。
+`alterId` 为 `0`。
 
-`alterId` 为 `64`。
-
-V2Ray 将在部署时自动安装最新版本。
+vv 将在部署时自动安装最新版本。
 
 **出于安全考量，除非使用 CDN，否则请不要使用自定义域名，而使用 Heroku 分配的二级域名，以实现 V2Ray Websocket + TLS。**
+
+**添加了奇怪的agent，以观测是否在线**
